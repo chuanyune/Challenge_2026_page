@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="news.css">
 </head>
 <body class="news-page">
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
@@ -35,7 +34,6 @@
         </div>
     </nav>
 
-    <!-- News Header -->
     <section class="news-header">
         <div class="container">
             <h1 class="news-title">Challenge News</h1>
@@ -43,12 +41,10 @@
         </div>
     </section>
 
-    <!-- News Content -->
     <section class="news-content">
         <div class="container">
             <div class="news-list">
-                <!-- News Item 1 -->
-                <article class="news-item" data-date="2025-11-15">
+                <!-- <article class="news-item" data-date="2025-11-15">
                     <div class="news-date">
                         <span class="date-day">15</span>
                         <span class="date-month">Nov</span>
@@ -68,7 +64,6 @@
                     </div>
                 </article>
 
-                <!-- News Item 2 -->
                 <article class="news-item" data-date="2025-11-10">
                     <div class="news-date">
                         <span class="date-day">10</span>
@@ -87,31 +82,29 @@
                             develop better solutions.
                         </p>
                     </div>
-                </article>
+                </article> -->
 
-                <!-- News Item 3 -->
-                <article class="news-item" data-date="2025-11-05">
+                <article class="news-item" data-date="2025-12-04">
                     <div class="news-date">
-                        <span class="date-day">05</span>
-                        <span class="date-month">Nov</span>
+                        <span class="date-day">04</span>
+                        <span class="date-month">Dec</span>
                         <span class="date-year">2025</span>
                     </div>
                     <div class="news-body">
                         <div class="news-meta">
-                            <span class="news-category">Event</span>
-                            <span class="news-time" data-date="2025-11-05"></span>
+                            <span class="news-category">Announcement</span>
+                            <span class="news-time" data-date="2025-12-04"></span>
                         </div>
-                        <h2 class="news-heading">Workshop Schedule Announced</h2>
+                        <h2 class="news-heading">Challenge Webpage Released</h2>
                         <p class="news-excerpt">
-                            The workshop schedule for Challenge 2026 has been finalized. We will host three 
-                            technical workshops covering key topics, best practices, and Q&A sessions with 
-                            the organizing committee.
+                            The ManiSkill-ViTac 2026 official website is live. Follow the news and documentation
+                            sections to stay informed about timelines, track information and upcoming events.
+                            Share the link with your teammates to ensure everyone has the latest updates.
                         </p>
                     </div>
                 </article>
 
-                <!-- News Item 4 -->
-                <article class="news-item" data-date="2025-11-01">
+                <!-- <article class="news-item" data-date="2025-11-01">
                     <div class="news-date">
                         <span class="date-day">01</span>
                         <span class="date-month">Nov</span>
@@ -131,7 +124,6 @@
                     </div>
                 </article>
 
-                <!-- News Item 5 -->
                 <article class="news-item" data-date="2025-10-25">
                     <div class="news-date">
                         <span class="date-day">25</span>
@@ -150,13 +142,12 @@
                             metrics and leaderboard rankings.
                         </p>
                     </div>
-                </article>
+                </article> -->
             </div>
 
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>© 2025 Your Lab/Organization Name. Thanks to all contributors and collaborators who made this benchmark possible.</p>
@@ -165,18 +156,15 @@
 
     <script src="news-indicator.js"></script>
     <script>
-        // 计算相对时间的函数
         function getRelativeTime(dateString) {
             const newsDate = new Date(dateString);
             const now = new Date();
             const diffInSeconds = Math.floor((now - newsDate) / 1000);
             
-            // 如果日期在未来，返回 "Coming soon"
             if (diffInSeconds < 0) {
                 return "Coming soon";
             }
             
-            // 计算时间差
             const seconds = diffInSeconds;
             const minutes = Math.floor(seconds / 60);
             const hours = Math.floor(minutes / 60);
@@ -185,7 +173,6 @@
             const months = Math.floor(days / 30);
             const years = Math.floor(days / 365);
             
-            // 返回相对时间字符串
             if (seconds < 60) {
                 return seconds <= 1 ? "Just now" : seconds + " seconds ago";
             } else if (minutes < 60) {
@@ -203,7 +190,6 @@
             }
         }
         
-        // 更新所有新闻的相对时间
         function updateAllRelativeTimes() {
             const timeElements = document.querySelectorAll('.news-time[data-date]');
             timeElements.forEach(element => {
@@ -214,12 +200,10 @@
             });
         }
         
-        // 页面加载时更新
         document.addEventListener('DOMContentLoaded', function() {
             updateAllRelativeTimes();
             
-            // 每分钟更新一次（可选，让时间实时更新）
-            setInterval(updateAllRelativeTimes, 60000); // 60000毫秒 = 1分钟
+            setInterval(updateAllRelativeTimes, 60000);
         });
     </script>
 </body>

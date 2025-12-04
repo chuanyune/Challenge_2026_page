@@ -41,7 +41,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
     background-color: var(--dark-bg);
     padding: 1.25rem 0;
@@ -97,7 +96,6 @@ body {
     top: -1px;
 }
 
-/* Nav dropdown for past challenges */
 .nav-item-dropdown {
     position: relative;
 }
@@ -146,7 +144,6 @@ body {
     background-color: rgba(55, 65, 81, 0.9);
 }
 
-/* Hero Section */
 .hero {
     background-color: var(--dark-bg);
     color: var(--text-primary);
@@ -167,7 +164,7 @@ body {
     bottom: 0;
     background-image:
         linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.8) 100%),
-        url('imgs/hero_bg.jpg'); /* TODO: 将 hero_bg.jpg 替换为你的背景图片文件名 */
+        url('imgs/hero_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,7 +265,6 @@ body {
     box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
 }
 
-/* Hero Banner */
 .hero-banner {
     background-color: var(--primary-blue);
     padding: 1.25rem 0;
@@ -318,7 +314,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* Main Content */
 .main-content {
     padding: 5rem 0;
     background-color: #f5f7fb;
@@ -345,7 +340,6 @@ body {
     font-weight: 600;
 }
 
-/* Timeline Section */
 .timeline-section {
     margin: 1rem 0;
     padding: 1.5rem 0 0.5rem;
@@ -394,7 +388,6 @@ body {
     font-weight: 600;
 }
 
-/* Scenarios Section */
 .scenarios-section {
     margin: 5rem 0;
     padding: 2rem 0;
@@ -407,7 +400,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Team Section */
 .team-section {
     margin: 5rem 0;
     padding: 3rem 0 2rem;
@@ -479,7 +471,6 @@ body {
     line-height: 1.4;
 }
 
-/* Contact Section */
 .contact-section {
     margin: 5rem 0;
     padding: 3rem 0 2rem;
@@ -503,7 +494,6 @@ body {
     text-decoration: underline;
 }
 
-/* Sponsors Section */
 .sponsors-section {
     margin: 5rem 0;
     padding: 3rem 0 2rem;
@@ -543,7 +533,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Footer */
 .footer {
     background-color: var(--bg-light);
     padding: 2.5rem 0;
@@ -557,7 +546,6 @@ body {
     line-height: 1.6;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;

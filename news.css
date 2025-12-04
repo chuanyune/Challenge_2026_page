@@ -1,11 +1,8 @@
-/* News Page Styles */
-
 .news-page {
     background-color: #f5f7fb;
     color: #0f172a;
 }
 
-/* News Header */
 .news-header {
     background: linear-gradient(135deg, #e0edff 0%, #cdd9ff 100%);
     color: #0f172a;
@@ -48,7 +45,6 @@
     margin: 0 auto;
 }
 
-/* Navigation Active State */
 .nav-link.active {
     opacity: 1;
     position: relative;
@@ -64,7 +60,6 @@
     background-color: var(--text-primary);
 }
 
-/* News Content */
 .news-content {
     padding: 4rem 0;
     background-color: #f5f7fb;
@@ -76,7 +71,6 @@
     display: block;
 }
 
-/* News Item */
 .news-item {
     display: flex;
     gap: 1.5rem;
@@ -88,7 +82,6 @@
     background-color: rgba(148, 163, 184, 0.08);
 }
 
-/* News Date */
 .news-date {
     display: flex;
     flex-direction: column;
@@ -121,7 +114,6 @@
     margin-top: 0.15rem;
 }
 
-/* News Body */
 .news-body {
     flex: 1;
 }
@@ -171,8 +163,6 @@
     margin-bottom: 0;
 }
 
-/* Load More Button */
-/* Responsive Design */
 @media (max-width: 768px) {
     .news-title {
         font-size: 2.5rem;
